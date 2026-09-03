@@ -81,10 +81,10 @@ The `Equals2` opcode in the `if` (`0x49`) becomes `Less2` (`0x48`), turning the 
 
 ## Scope / known limitations
 
-* Covers the **Dynasty** and **Road to Glory** week-hub Play button — the only place in the career/front-end UI that shows the Offline Warning (all 27 career and front-end UI nodes were scanned; it exists only in `node_cfm/hub`). Play Now has no such gate.
+* Covers the **Dynasty** and **Road to Glory** week-hub Play button — the only place in the career/front-end UI scripts that shows the Offline Warning (all 27 career and front-end UI nodes were scanned; it exists only in `node_cfm/hub`). The similar-looking Offline Warning on **Play Now** (main menu → Play → Play Now) is shown by the game's native code rather than by the UI scripts, so it is out of reach for this kind of mod and is **not** removed.
 * The account-error patch covers the login-failed dialog at boot and on Dynasty/RTG entry. Other MMC-related notices (if any are added in future MMC versions) are separate.
 * Ultimate Team is online-only and is not touched.
-* Title updates that change either file may require the mod to be rebuilt. If a popup returns after a patch, open an issue.
+* Title updates that change either file require the mod to be rebuilt (v1.1.1 → Title Update 3.5, v1.1.2 → September 3, 2026 update). If a popup returns after a patch, open an issue.
 
 ## Building from source
 

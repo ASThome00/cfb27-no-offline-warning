@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2 – 2026-09-03
+- Rebuilt against the **September 3, 2026 title update**. Same two one-byte patches as v1.1 / v1.1.1 (Offline Warning + Account Error); no functional changes, online behavior unchanged.
+- If you were on v1.1.1 and the September 3 update brought back either popup, update to this release.
+
 ## 1.1.1 – 2026-08-27
 - Rebuilt against **Title Update 3.5** (2026-08-27). Same two one-byte patches as v1.1 (Offline Warning + Account Error); no functional changes, online behavior unchanged.
 - If you were on v1.1 and Title Update 3.5 brought back either popup, update to this release.
