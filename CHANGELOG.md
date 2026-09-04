@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.3 – 2026-09-04
+- **Fixes the blank EA Sports Network story cards** in Dynasty / Road to Glory after the September 3, 2026 update (thanks to pleasealonemeleave2 for the report).
+- Root cause: v1.1.1 and v1.1.2 were re-exports of the same MMC project and still shipped the **August 25** copies of `common/ui/node_cfm/hub/corenode.ast` and `common/ui/node_com/scriptpod.ast`. MMC replaces the whole asset, so with the mod enabled the game was silently running the pre-update hub and script pod. The September 3 update changed both files (new hub screen-loader lifecycle, hint bar, Download Center filters, invite locks), and the new story-card screen depends on that updated hub code.
+- Both assets re-exported from the updated game and re-patched. Same two one-byte changes as before (the patch sites moved +368 / +592 bytes); no functional changes to the mod itself, online behavior unchanged.
+- The publish script now refuses to release when the project's embedded assets are byte-identical to the previous release, so a "rebuild" can no longer ship stale files.
+
 ## 1.1.2 – 2026-09-03
 - Rebuilt against the **September 3, 2026 title update**. Same two one-byte patches as v1.1 / v1.1.1 (Offline Warning + Account Error); no functional changes, online behavior unchanged.
 - If you were on v1.1.1 and the September 3 update brought back either popup, update to this release.
