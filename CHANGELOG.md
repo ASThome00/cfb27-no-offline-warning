@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.5 – 2026-09-26
+- Rebuilt against the **September 26, 2026 title update**: fresh exports of `common/ui/node_cfm/hub/corenode.ast` and `common/ui/node_com/scriptpod.ast`, re-patched. Same two one-byte patches; no functional changes, online behavior unchanged.
+- The update re-stamped both archives (new header IDs) but the ActionScript inside is byte-identical to September 3; patch sites unchanged (corenode @145869, scriptpod @1052548).
+- Correction to 1.1.4: that build carried the September 3 copies of both files rather than fresh September 10 exports. Since the script has not changed since September 3, it behaved correctly.
+
 ## 1.1.4 – 2026-09-10
 - Rebuilt against the **September 10, 2026 title update**: fresh exports of `common/ui/node_cfm/hub/corenode.ast` and `common/ui/node_com/scriptpod.ast` from the updated game, re-patched. Same two one-byte patches as v1.1.3 (Offline Warning + Account Error); no functional changes, online behavior unchanged.
 - If you were on v1.1.3 and the September 10 update brought back either popup or broke a front-end screen with the mod enabled, update to this release.
