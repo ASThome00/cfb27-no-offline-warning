@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.6 – 2026-10-02
+- Rebuilt against the **October 1, 2026 title update**: fresh exports of `common/ui/node_cfm/hub/corenode.ast` and `common/ui/node_com/scriptpod.ast`, re-patched. Same two one-byte patches (Offline Warning + Account Error); no functional changes, online behavior unchanged.
+- EA edited the scripts in both archives this time (they changed size), so this is a real rebuild. Patch sites: corenode @145869 (unchanged), scriptpod @1052596 (was 1052548).
+- Exported with MMC v1.1.0.6.
+
 ## 1.1.5 – 2026-09-26
 - Rebuilt against the **September 26, 2026 title update**: fresh exports of `common/ui/node_cfm/hub/corenode.ast` and `common/ui/node_com/scriptpod.ast`, re-patched. Same two one-byte patches; no functional changes, online behavior unchanged.
 - The update re-stamped both archives (new header IDs) but the ActionScript inside is byte-identical to September 3; patch sites unchanged (corenode @145869, scriptpod @1052548).
