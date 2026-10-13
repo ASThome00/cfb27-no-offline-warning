@@ -1,5 +1,7 @@
 # CFB 27 – No Offline Warning
 
+> **This mod has moved into [Popup Remover](https://github.com/ASThome00/cfb27-popup-remover).** Popup Remover v1.1.0 and later include both patches below (Offline Warning + Account Error) plus the skill-upgrade SUCCESS popup removal, and that's where future title-update rebuilds go. This repo is no longer updated: v1.1.6 (October 1, 2026 title update) is the last build, and future title updates will not be rebuilt here. Switch to Popup Remover and disable this mod. They ship two of the same files, so running both is redundant.
+
 A mod for **EA Sports College Football 27 (PC)** that removes the nag popups you get when playing offline / not logged in (for example, with mods enabled):
 
 **1. The "Offline Warning"** shown before every **Dynasty** and **Road to Glory** game:
@@ -84,7 +86,7 @@ The `Equals2` opcode in the `if` (`0x49`) becomes `Less2` (`0x48`), turning the 
 * Covers the **Dynasty** and **Road to Glory** week-hub Play button — the only place in the career/front-end UI scripts that shows the Offline Warning (all 27 career and front-end UI nodes were scanned; it exists only in `node_cfm/hub`). The similar-looking Offline Warning on **Play Now** (main menu → Play → Play Now) is shown by the game's native code rather than by the UI scripts, so it is out of reach for this kind of mod and is **not** removed.
 * The account-error patch covers the login-failed dialog at boot and on Dynasty/RTG entry. Other MMC-related notices (if any are added in future MMC versions) are separate.
 * Ultimate Team is online-only and is not touched.
-* Title updates that change either file require the mod to be rebuilt from a **fresh export** of both assets (latest: v1.1.6 → October 1, 2026 update). Because MMC replaces the whole asset, an out-of-date build silently rolls those two files back to an older version — v1.1.1/v1.1.2 did exactly that and broke the EA Sports Network story cards. If a popup returns, or a new front-end feature stops working after a patch, open an issue.
+* Title updates that change either file require the mod to be rebuilt from a **fresh export** of both assets (last build: v1.1.6 → October 1, 2026 update; later updates ship in Popup Remover). Because MMC replaces the whole asset, an out-of-date build silently rolls those two files back to an older version — v1.1.1/v1.1.2 did exactly that and broke the EA Sports Network story cards. If a popup returns, or a new front-end feature stops working after a patch, open an issue.
 
 ## Building from source
 

@@ -1,5 +1,8 @@
 # Changelog
 
+## Discontinued – 2026-10-13
+- No Offline Warning is no longer updated. Both of its patches (Offline Warning + Account Error) now ship in **[Popup Remover](https://github.com/ASThome00/cfb27-popup-remover) v1.1.0+**, together with the skill-upgrade SUCCESS popup removal. v1.1.6 is the last build of this mod.
+
 ## 1.1.6 – 2026-10-02
 - Rebuilt against the **October 1, 2026 title update**: fresh exports of `common/ui/node_cfm/hub/corenode.ast` and `common/ui/node_com/scriptpod.ast`, re-patched. Same two one-byte patches (Offline Warning + Account Error); no functional changes, online behavior unchanged.
 - EA edited the scripts in both archives this time (they changed size), so this is a real rebuild. Patch sites: corenode @145869 (unchanged), scriptpod @1052596 (was 1052548).
